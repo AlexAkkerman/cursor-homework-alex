@@ -1,9 +1,4 @@
 @font-face {
-   font-family: "Avenir LT Std 95";
-   src: url(../fonts/Avenir\ LT\ Std\ 95\ Black.otf);
-}
-
-@font-face {
    font-family: "Avenir LT Std 45 Book";
    src: url(../fonts/Avenir\ LT\ Std\ 45\ Book.otf);
 }
@@ -15,7 +10,7 @@
 
 @font-face {
    font-family: 'San Francisco Pro Display Light';
-   src: url('../fonts/SFProDisplay-Light.ttf');
+   src: url(../fonts/SFProDisplay-Light.ttf);
 
 }
 
