@@ -1,11 +1,11 @@
 @font-face {
    font-family: "Avenir LT Std 95";
-   src: url(/fonts/Avenir\ LT\ Std\ 95\ Black.otf);
+   src: url(./fonts/Avenir\ LT\ Std\ 95\ Black.otf);
 }
 
 @font-face {
    font-family: "Avenir LT Std 45 Book";
-   src: url(/fonts/Avenir\ LT\ Std\ 45\ Book.otf);
+   src: url(./fonts/Avenir\ LT\ Std\ 45\ Book.otf);
 }
 
 p {
@@ -135,14 +135,14 @@ p.cookieA1,
    width: 16px;
    height: 16px;
 
-   background: url(/img/info1.png);
+   background: url(./img/info1.png);
 }
 
 .imageA2x {
    width: 16px;
    height: 16px;
    margin-left: 12px;
-   background: url(/img/x.png);
+   background: url(./img/x.png);
 }
 
 .imageA2x,
@@ -187,7 +187,7 @@ p.cookieA1,
 
    width: 36px;
    height: 36px;
-   background-image: url(/img/Frame.png);
+   background-image: url(./img/Frame.png);
 
 }
 
