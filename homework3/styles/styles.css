@@ -8,6 +8,23 @@
    src: url(../fonts/Avenir\ LT\ Std\ 45\ Book.otf);
 }
 
+@font-face {
+   font-family: "Gilroy Heavy";
+   src: url(../fonts/Gilroy-Heavy.ttf);
+}
+
+@font-face {
+   font-family: 'San Francisco Pro Display Light';
+   src: url('../fonts/SFProDisplay-Light.ttf');
+
+}
+
+@font-face {
+   font-family: "SF Pro Medium";
+   src: url(../fonts/SFProDisplay-Medium.ttf);
+}
+
+
 p {
    margin-block-start: 0px;
    margin-block-end: 0px;
@@ -32,7 +49,7 @@ body {
    height: 990px;
    background-color: #E5E5E5;
    left: 24px;
-   padding: 228px 24px 0 24px;
+   padding: 64px 24px 0 24px;
    margin: auto;
    gap: 24px;
    display: flex;
@@ -357,6 +374,10 @@ p.cookieA1,
    color: #FFFFFF;
 }
 
+.bannerC01 p span {
+   text-decoration: underline;
+}
+
 .bannerC01 p {
    width: 312px;
    height: 80px;
@@ -390,6 +411,10 @@ p.cookieA1,
    color: #FFFFFF;
 }
 
+.C01end p:hover {
+   cursor: pointer;
+}
+
 .acceptbtnC01 {
    display: flex;
    justify-content: center;
@@ -412,4 +437,267 @@ p.cookieA1,
    line-height: 16px;
    margin: auto;
    color: #FFFFFF;
+}
+
+.bannerD01wrap {
+   width: 320px;
+   height: 260px;
+
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(186, 226, 255, 0.15) 23.96%, rgba(229, 217, 255, 0.15) 71.87%, rgba(255, 255, 255, 0.15) 100%), #FFFFFF;
+   box-shadow: 0px 8px 32px rgba(10, 3, 89, 0.1);
+   border-radius: 20px;
+}
+
+.bannerD01 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 32px;
+   gap: 16px;
+
+}
+
+.bannerD01 p.head {
+   width: 104px;
+   height: 48px;
+
+   font-family: 'Gilroy Heavy';
+   font-size: 28px;
+   line-height: 48px;
+   text-align: center;
+   margin-bottom: -15px;
+   color: #15295A;
+}
+
+.bannerD01 p {
+   width: 256px;
+   height: 72px;
+
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   text-align: center;
+   margin-bottom: 10px;
+   color: #15295A;
+}
+
+.D01acceptbtn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+
+   width: 121px;
+   height: 44px;
+   background: #4A7EFF;
+   border-radius: 43px;
+
+}
+
+
+.D01acceptbtn p {
+   width: 57px;
+   height: 24px;
+   margin: auto auto;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 24px;
+   color: #FFFFFF;
+}
+
+.D01acceptbtn p:hover {
+   cursor: pointer;
+
+}
+
+.bannerD02wrap {
+   width: 320px;
+   height: 137px;
+   box-sizing: border-box;
+   background: #FFFFFF;
+   box-shadow: 0px 8px 32px rgba(10, 3, 89, 0.1);
+   border-radius: 4px;
+}
+
+.bannerD02 {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   padding: 16px;
+   gap: 12px;
+}
+
+.bannerD02 p {
+   width: 288px;
+   height: 60px;
+
+   font-family: 'SF Pro Medium';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   color: #000000;
+}
+
+.bannerD02_bottom {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+
+.bannerD02_bottom p {
+   width: 95px;
+   height: 17px;
+
+   font-family: "SF Pro Medium";
+
+   font-size: 14px;
+   line-height: 17px;
+   text-align: center;
+   margin-left: -7px;
+   color: #6666FF;
+}
+
+.bannerD02_bottom p:hover {
+   cursor: pointer;
+}
+
+.bannerD02_bottom .btn {
+   width: 64px;
+   height: 33px;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   background: #6666FF;
+   border-radius: 4px;
+}
+
+.bannerD02_bottom .btn span {
+   font-family: 'San Francisco Pro Display Light';
+   margin: auto auto;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 17px;
+
+
+
+   text-align: center;
+
+   color: #FFFFFF;
+}
+
+.bannerD02_bottom .btn:hover {
+   cursor: pointer;
+}
+
+.combination {
+   display: flex;
+   flex-direction: row;
+   gap: 40px;
+}
+
+.bannerC03wrap {
+   width: 360px;
+   height: 170px;
+
+   background: #FFFFFF;
+   box-shadow: 0px 12px 24px -6px rgba(96, 96, 96, 0.15), 0px 0px 1px rgba(96, 96, 96, 0.1);
+   border-radius: 16px;
+}
+
+.bannerC03 {
+
+   display: flex;
+   flex-direction: column;
+
+   padding: 16px;
+   gap: 10px;
+}
+
+.bannerC03 h1 {
+   width: 132px;
+   height: 20px;
+
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 20px;
+   color: #0F181D;
+}
+
+.bannerC03 p {
+   width: 328px;
+   height: 60px;
+
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 20px;
+   color: #687F8C;
+}
+
+.bannerC03_botton {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.bannerC03_botton .btn1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 160px;
+   height: 32px;
+   background: #EAF0F4;
+   box-shadow: 0px 2px 2px -2px rgba(34, 38, 50, 0.3);
+   border-radius: 6px;
+}
+
+.bannerC03_botton .btn1 span {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 16px;
+   text-align: center;
+
+   color: #687F8C;
+}
+
+
+.bannerC03_botton .btn2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 160px;
+   height: 32px;
+   background: #40C1A7;
+   box-shadow: 0px 2px 2px -2px rgba(34, 38, 50, 0.3);
+   border-radius: 6px;
+}
+
+.bannerC03_botton .btn2 span {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 16px;
+   text-align: center;
+
+   color: #FFFFFF;
+}
+
+.bannerC03_botton .btn2 span,
+.bannerC03_botton .btn1 span:hover {
+   cursor: pointer;
 }
