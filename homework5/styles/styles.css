@@ -84,7 +84,7 @@ input#search {
    margin-top: -10px;
    margin-bottom: -10px;
    background-color: #4f4f4f;
-   background-image: url(/img/magnifying-glass-solid.svg);
+   background-image: url(../img/magnifying-glass-solid.svg);
    background-repeat: no-repeat;
    background-position: 5%;
    background-size: 15px;
@@ -100,4 +100,5 @@ input#search::placeholder {
 
 input#search:hover {
    background-image: none;
+   cursor: pointer;
 }
