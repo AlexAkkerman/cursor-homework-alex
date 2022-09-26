@@ -2,6 +2,7 @@ body {
    background-color: #2c2c2c;
    margin-top: 35px;
    color: white;
+   font-size: 0.75em;
 }
 
 .table {
@@ -15,10 +16,9 @@ body {
 }
 
 th {
-   font-size: 0.75em;
    text-align: left;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-weight: 500;
+   font-weight: 800;
 }
 
 
@@ -34,14 +34,12 @@ th {
 }
 
 .date {
-   font-size: 0.75em;
    width: 40%;
    color: #b1b1b1aa;
    font-family: sans-serif;
 }
 
 .name {
-   font-size: 0.75em;
    width: 50%;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -58,4 +56,48 @@ td {
 
 .arrow:hover {
    cursor: pointer;
+}
+
+#table2,
+#table3 {
+
+   margin-top: 50px;
+}
+
+.minus {
+   margin-right: 12px;
+}
+
+input#checkbox {
+   margin-left: -0.5px;
+   margin-right: 8px;
+}
+
+.folder {
+   color: rgb(50, 74, 235);
+   margin-right: 5px;
+}
+
+input#search {
+   height: 35px;
+   margin-left: 200px;
+   margin-top: -10px;
+   margin-bottom: -10px;
+   background-color: #4f4f4f;
+   background-image: url(/img/magnifying-glass-solid.svg);
+   background-repeat: no-repeat;
+   background-position: 5%;
+   background-size: 15px;
+   text-indent: 10px;
+   border-style: none;
+   border-radius: 4px;
+}
+
+input#search::placeholder {
+   padding-left: 18px;
+   color: #b8b8b8;
+}
+
+input#search:hover {
+   background-image: none;
 }
