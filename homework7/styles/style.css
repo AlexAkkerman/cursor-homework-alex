@@ -395,15 +395,15 @@ hr {
    width: 350px;
    height: 270px;
    position: relative;
-   background-image: url(/img/Catalog1.png);
+   background-image: url(./img/Catalog1.png);
 }
 
 .catalog_item2 .catalog_item_top {
-   background-image: url(/img/Catalog2.png)
+   background-image: url(./img/Catalog2.png)
 }
 
 .catalog_item3 .catalog_item_top {
-   background-image: url(/img/Catalog3.png)
+   background-image: url(./img/Catalog3.png)
 }
 
 .catalog_item_top img {
