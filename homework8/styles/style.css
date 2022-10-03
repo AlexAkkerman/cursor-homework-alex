@@ -1,10 +1,44 @@
+.wrapper {
+   width: 200px;
+   height: 300px;
+   margin: auto auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: auto;
+}
+
+.wrapper div {
+   border: 2px solid black;
+}
+
+
+
+.wrapper div:nth-last-child(-n+4) {
+   display: block;
+   background-color: blue;
+
+}
+
+.wrapper div:nth-child(4n+3) {
+   display: block;
+   background-color: red;
+
+}
+
+
+
+
+
+
+
+
 /* BUTTON */
 
 .button_wrap {
    width: 100%;
    display: flex;
    justify-content: center;
-   margin-top: 200px;
+   margin-top: 100px;
 }
 
 button {
