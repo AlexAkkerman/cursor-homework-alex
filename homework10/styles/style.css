@@ -1,0 +1,400 @@
+.animations-box_wrapper {
+
+   display: flex;
+   flex-direction: column;
+   gap: 100px;
+   align-items: center;
+   padding-top: 50px;
+}
+
+/* STAR WARS */
+
+.starwars {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 400px;
+   height: 300px;
+   background-image: url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg);
+   background-size: 150%;
+   z-index: 1;
+}
+
+.starwars_second {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 60px;
+   width: 400px;
+   height: 300px;
+   background-image: url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg);
+   background-size: 150%;
+   z-index: 1;
+}
+
+.laserblade_red {
+   position: absolute;
+   top: 50%;
+   left: 25%;
+   width: 200px;
+   height: 10px;
+   background-image: linear-gradient(to left, rgb(247, 204, 204), rgb(242, 97, 97));
+   border-radius: 10px;
+   box-shadow: 0px 0px 20px red;
+   animation-name: starwars;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-delay: 2s;
+   animation-timing-function: ease-in-out;
+
+}
+
+.laserblade_blue {
+   position: absolute;
+   top: 50%;
+   left: 25%;
+   width: 200px;
+   height: 10px;
+   background-image: linear-gradient(to left, rgb(204, 221, 247), rgb(97, 119, 242));
+   border-radius: 10px;
+   box-shadow: 0px 0px 20px rgb(25, 0, 255);
+   animation-name: laserblade_blue;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-delay: 2s;
+   animation-timing-function: ease-in-out;
+
+}
+
+.laserblade_blue::after {
+   content: "";
+   position: absolute;
+   right: 0px;
+   height: 10px;
+   width: 30px;
+   background-color: black;
+   margin-right: 5px;
+}
+
+
+.laserblade_red:after {
+   content: "";
+   position: absolute;
+   left: 0px;
+   height: 10px;
+   width: 30px;
+   background-color: black;
+   margin-left: 5px;
+}
+
+.laserblade_red2 {
+   position: relative;
+   height: 30px;
+   width: 7px;
+   background-color: black;
+   border: 1px solid grey;
+   border-top: none;
+   border-bottom-left-radius: 2px;
+   border-bottom-right-radius: 2px;
+
+}
+
+.laserblade_red2::after {
+   content: "";
+   position: absolute;
+   top: -300%;
+   height: 100px;
+   width: 7px;
+   background-image: linear-gradient(to left, rgb(247, 204, 204), rgb(242, 97, 97));
+   box-shadow: 0px 0px 20px red;
+   border-radius: 10px;
+   /* transform: rotateY(90deg); */
+   animation-name: laserblade-red2_rotateY;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-timing-function: cubic-bezier(0.49, 0.32, 0, 1.11);
+   animation-direction: alternate;
+   z-index: -1;
+}
+
+
+
+.laserblade_blue2 {
+   position: relative;
+   height: 30px;
+   width: 7px;
+   background-color: black;
+   border: 1px solid grey;
+   border-top: none;
+   border-bottom-left-radius: 2px;
+   border-bottom-right-radius: 2px;
+}
+
+
+.laserblade_blue2::after {
+   content: "";
+   position: absolute;
+   top: -300%;
+   height: 100px;
+   width: 7px;
+   background-image: linear-gradient(to left, rgb(204, 221, 247), rgb(97, 119, 242));
+   box-shadow: 0px 0px 20px rgb(17, 0, 255);
+   border-radius: 10px;
+   /* transform: rotateY(90deg); */
+   animation-name: laserblade-red2_rotateY;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-timing-function: cubic-bezier(0.49, 0.32, 0, 1.11);
+   animation-direction: alternate;
+   z-index: -1;
+}
+
+.rotate_red {
+   animation-name: laserblade-red_rotate;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+
+}
+
+.rotate_blue {
+   animation-name: laserblade-blue_rotate;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+
+/*  STAR WARS ANIMATION */
+
+
+@keyframes laserblade-red2_rotateY {
+   0% {
+      transform: rotateY(90deg);
+   }
+
+   15% {
+      transform: rotateY(90deg);
+   }
+
+   100% {
+      transform: rotateY(0deg);
+   }
+}
+
+@keyframes laserblade-red_rotate {
+   0% {
+      transform: rotate(0deg);
+
+   }
+
+
+
+   60% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(45deg);
+   }
+}
+
+@keyframes laserblade-blue_rotate {
+   0% {
+      transform: rotate(0deg);
+
+   }
+
+
+
+   60% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(-45deg);
+   }
+}
+
+
+@keyframes starwars {
+
+   0% {
+      transform: rotate(0deg)
+   }
+
+   50% {
+      transform: rotate(170deg);
+   }
+
+   60% {
+      transform: rotate(170deg);
+   }
+
+   80% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(0deg);
+   }
+
+}
+
+@keyframes laserblade_blue {
+
+   0% {
+      transform: rotate(0deg);
+   }
+
+   50% {
+      transform: rotate(-170deg);
+   }
+
+   60% {
+      transform: rotate(-170deg);
+   }
+
+   80% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(0deg);
+   }
+}
+
+
+/* NEWTON */
+
+.newton {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: flex-end;
+   width: 655px;
+   height: 250px;
+   background: #F32322;
+   z-index: 1;
+   padding-bottom: 15px;
+}
+
+.first-ball {
+   z-index: -10;
+   position: relative;
+
+   width: 50px;
+   height: 250px;
+   background-color: rgba(34, 143, 151, 0);
+   animation-name: rotate_first_ball;
+   animation-duration: 2s;
+   animation-timing-function: cubic-bezier(0.03, 0.12, 0.3, 1.0);
+   animation-iteration-count: infinite;
+   animation-direction: alternate-reverse;
+
+
+}
+
+.second-ball {
+   z-index: -10;
+   position: relative;
+
+   width: 50px;
+   height: 250px;
+   background-color: rgba(34, 143, 151, 0);
+   animation-name: rotate_second_ball;
+   animation-duration: 2s;
+   animation-timing-function: cubic-bezier(0.03, 0.12, 0.3, 1.0);
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+.second-ball::after {
+   content: "";
+   position: absolute;
+   bottom: -50px;
+   width: 50px;
+   height: 50px;
+   background-color: blue;
+   border-radius: 25px;
+   z-index: 2;
+   opacity: 1;
+   animation-name: color;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+
+}
+
+.wrapper {
+   transform: translateY(-20%);
+}
+
+
+.first-ball::after {
+   content: "";
+   position: absolute;
+   bottom: -50px;
+   width: 50px;
+   height: 50px;
+   background-color: blue;
+   border-radius: 25px;
+   z-index: 2;
+   opacity: 1;
+   animation-name: color;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate-reverse;
+}
+
+@keyframes rotate_first_ball {
+
+
+   0% {
+      transform: rotate(0deg);
+   }
+
+   50% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(90deg);
+   }
+}
+
+@keyframes rotate_second_ball {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   50% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(-90deg);
+   }
+
+
+}
+
+@keyframes color {
+   0% {
+      background-color: blue;
+   }
+
+   40% {
+      background-color: blue;
+   }
+
+   100% {
+      background-color: rgb(255, 217, 3);
+   }
+
+}
