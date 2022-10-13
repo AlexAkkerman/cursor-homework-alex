@@ -425,6 +425,10 @@ body {
    background-position: 50%;
    box-shadow: 0px 2.51034px 6.27586px rgba(51, 51, 51, 0.1), 0px 3.13793px 15.6897px rgba(0, 0, 0, 0.25);
    z-index: 100;
+   animation-name: smooth_scale;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
 }
 
 .box2_image::after {
@@ -441,8 +445,22 @@ body {
    background-position: 50%;
    box-shadow: 0px 2.51034px 6.27586px rgba(51, 51, 51, 0.1), 0px 3.13793px 15.6897px rgba(0, 0, 0, 0.25);
    z-index: 100;
+   animation-name: smooth_scale;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
 }
 
+@keyframes smooth_scale {
+   from {
+      transform: scale(1);
+   }
+
+   to {
+      transform: scale(1.1)
+   }
+
+}
 
 .circle1 {
    position: absolute;
