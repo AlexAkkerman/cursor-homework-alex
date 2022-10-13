@@ -2,11 +2,12 @@ body {
    max-width: 100vw;
    height: auto;
    font-size: 62.5% !important;
+
 }
 
 .top_wrapper {
    position: relative;
-   width: 100vmax;
+   width: 100vw;
    display: grid;
    grid-template-columns: 50%;
    grid-template-rows: auto;
