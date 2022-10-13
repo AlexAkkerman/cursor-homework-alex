@@ -96,7 +96,7 @@ body {
 .top_btns div:nth-child(1) h3 {
    font-family: 'Roboto';
    font-weight: 500;
-   font-size: 21px;
+   font-size: 1rem;
    line-height: 25px;
    color: #FFFFFF;
    margin-top: 10px;
@@ -124,7 +124,7 @@ body {
 .top_btns div:nth-child(2) h3 {
    font-family: 'Roboto';
    font-weight: 700;
-   font-size: 18px;
+   font-size: 1rem;
    line-height: 25px;
    color: #FFFFFF;
    margin-top: 11px;
@@ -136,7 +136,7 @@ body {
    font-family: 'Roboto';
    font-style: normal;
    font-weight: 400;
-   font-size: 17.6041px;
+   font-size: 1rem;
    line-height: 21px;
    color: #FFFFFF;
 }
@@ -1098,10 +1098,13 @@ i {
    }
 }
 
+
+
 @media screen and (max-width:1400px) {
 
    .top_wrapper {
       width: 100vw;
+      grid-template-columns: 100%;
    }
 
    .top_banner {
